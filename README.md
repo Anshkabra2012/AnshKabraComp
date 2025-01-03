@@ -42,7 +42,7 @@ Visit the [Contact Page](contact.html) for more details.
 
 If you appreciate the value I bring and want to support my work, consider making a donation. Every contribution helps me continue delivering exceptional websites to clients worldwide.  
 
-[![Buy Me a Coffee](https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=AnshKabra&button_colour=5865f2&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00)](https://www.buymeacoffee.com/AnshKabra).
+(https://www.buymeacoffee.com/AnshKabra).
 
 ---
 
