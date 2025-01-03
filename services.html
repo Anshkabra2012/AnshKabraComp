@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        header img {
+            width: 100px;
+        }
+
+        #tabs {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 0;
+        }
+
+        #tabs ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #tabs li {
+            margin: 0 15px;
+        }
+
+        #tabs a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #tabs a:hover {
+            color: #ffcb05;
+        }
+
+        .table-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .table-header {
+            background-color: #ffcb05;
+            color: #000;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .table-row {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .table-row:last-child {
+            border-bottom: none;
+        }
+
+        .table-row .plan-name {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ffcb05;
+        }
+
+        .table-row .plan-details {
+            font-size: 14px;
+        }
+
+        .table-row .plan-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .table-row .plan-details ul li {
+            margin: 5px 0;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .cta button {
+            display: inline-block;
+            background: #ffcb05;
+            color: #000;
+            border: none;
+            padding: 10px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .cta button:hover {
+            transform: scale(1.1);
+        }
+
+        .cta button:focus {
+            outline: none;
+        }
+    </style>
+    <script>
+        function showContactInfo(plan) {
+            alert(`Contact Ansh Kabra at +447884594837 for more info on the ${plan} plan.`);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="final revised logo.png" alt="Company Logo">
+        </a>
+    </header>
+    <div id="tabs">
+        <ul>
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li><a href="about.html"><span>About</span></a></li>
+            <li><a href="services.html"><span>Services</span></a></li>
+            <li><a href="contact.html"><span>Contact</span></a></li>
+            <li><a href="donate.html"><span>Donate</span></a></li>
+        </ul>
+    </div>
+    <div class="table-container">
+        <div class="table-header">Our Service Plans</div>
+        <div class="table-row">
+            <div class="plan-name">Basic Plan</div>
+            <div class="plan-details">
+                <ul>
+                    <li>1 Website</li>
+                    <li>Email Support</li>
+                    <li>Basic SEO</li>
+                </ul>
+                <div class="cta">
+                    <button onclick="showContactInfo('Basic')">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="plan-name">Standard Plan</div>
+            <div class="plan-details">
+                <ul>
+                    <li>5 Websites</li>
+                    <li>Priority Support</li>
+                    <li>Advanced SEO</li>
+                </ul>
+                <div class="cta">
+                    <button onclick="showContactInfo('Standard')">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="plan-name">Premium Plan</div>
+            <div class="plan-details">
+                <ul>
+                    <li>Unlimited Websites</li>
+                    <li>24/7 Support</li>
+                    <li>Custom Features</li>
+                </ul>
+                <div class="cta">
+                    <button onclick="showContactInfo('Premium')">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

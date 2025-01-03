@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ansh Kabra - Web Development. Building websites that bring your ideas to life. Explore my projects and services.">
+    <title>Ansh Kabra - Web Development</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: comic sans ms;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-bottom: 2px solid #ddd;
+        }
+
+        header img {
+            width: 120px;
+            height: auto;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #5865F2, #4e54c8);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0 0 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin: 0 0 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffcb05;
+            color: #000;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 2px solid #fff;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background: #fff;
+            color: #ffcb05;
+            border-color: #ffcb05;
+            transform: scale(1.1);
+        }
+
+        .projects {
+            padding: 60px 20px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .projects h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .project-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(33% - 20px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .project-item p {
+            font-size: 1.1rem;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #ffcb05;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="final revised logo.png" alt="Company Logo">
+        </a>
+        <div id="tabs">
+            <ul>
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="services.html"><span>Services</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+                <li><a href="donate.html"><span>Donate</span></a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <h1>Welcome to Ansh Kabra</h1>
+        <p>Building websites that bring your ideas to life.</p>
+        <a href="services.html" class="cta-button">Explore Services</a>
+    </section>
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>MyPortfolio</h3>
+                <p>This project is where I made my own portfolio:
+                    you can see it at <a href="https://anshkabra.me/">portfolio</a>
+                </p>
+            </div>
+            <div class="project-item">
+                <h3>Project Two</h3>
+                <p>Description of project two. This project focused on...</p>
+            </div>
+            <div class="project-item">
+                <h3>Project Three</h3>
+                <p>Description of project three. The main goal was to...</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Ansh Kabra. All rights reserved. | <a href="contact.html">Contact Me</a></p>
+    </footer>
+</body>
+</html>

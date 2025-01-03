@@ -1,0 +1,175 @@
+#tabs {
+	float:left;
+	width:100%;
+    background:#000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-size:93%;
+	line-height:normal;
+	border-bottom:1px solid #666;
+    margin-top: -0px;
+  
+	}
+    @keyframes myAnim {
+        0%,
+        50%,
+        100% {
+            opacity: 1;
+        }
+    
+        25%,
+        75% {
+            opacity: 0;
+        }
+    }
+
+#tabs ul {
+	margin:0;
+	padding:10px 10px 0 50px;
+	list-style:none;
+	}
+
+#tabs li {
+	display:inline;
+	margin:0;
+	padding:0;
+	}
+
+#tabs a {
+	float:left;
+	background:url("tableft.gif") no-repeat left top;
+	margin:0;
+	padding:0 0 0 4px;
+	text-decoration:none;
+	}
+
+#tabs a span {
+	float:left;
+	display:block;
+	background:url("tabright.gif") no-repeat right top;
+	padding:5px 15px 4px 6px;
+	color:#FFF;
+	}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs a span {float:none;}
+
+/* End IE5-Mac hack */
+#tabs a:hover span {
+	color:#FFF;
+	}
+
+#tabs a:hover {
+	background-position:0% -42px;
+	}
+
+#tabs a:hover span {
+	background-position:100% -42px;
+	}
+
+body {
+    font-family: comic sans ms;
+    padding:0;
+    margin:0;
+    color:#333;
+    background-color:#fff;
+    }
+
+    .flicker {
+        animation: flicker 1.5s 1;
+    }
+    
+    @keyframes flicker {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.4;
+        }
+        75% {
+            opacity: 0.7;
+        }
+        90% {
+            opacity: 0.2;
+        }
+    }
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.truck {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: #5865F2;
+  border-radius: 10px;
+  animation: drive 2s infinite linear;
+}
+
+.truck-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.truck-window {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.truck-door {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.truck-wheel {
+  position: absolute;
+  bottom: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.truck-wheel:first-child {
+  left: 15px;
+}
+
+.truck-wheel:last-child {
+  right: 15px;
+}
+
+.loader-text {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333333;
+}
+
+@keyframes drive {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.cta{
+font-family: comic sans ms;
+}
